@@ -4,3 +4,5 @@ check for devices connected to the wifi, if there is too much devices connected 
 Most of the time, internet speed slows down due to obstruction or obstacles. Place your router in a cemtralized positions. 
 Check for and install any available firmware updates for the router, as these can improve performance and security. 
 Check your computers network drivers, if they are outdated then update them.
+Try connecting directly to your router with an Ethernet cable to see if the problem is with Wi-Fi itself.
+if the problem still exists then contact your ISP(Internet Service Provider)
