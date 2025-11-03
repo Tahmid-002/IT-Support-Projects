@@ -7,28 +7,28 @@ Environment Setup
 Platform: Oracle VirtualBox  
 
 Virtual Machines:
-- DC01 (Windows Server 2022)– Domain Controller  
-- CLIENT01 (Windows 11)** – Domain-joined workstation  
+- 22 (Windows Server 2022)– Domain Controller  
+- client11 (Windows 11)** – Domain-joined workstation  
 
 Network Configuration:
 - Adapter 1 (Bridged): Internet access  
 - Adapter 2 (Host-Only): Internal network between VMs  
-- Static IP (DC01): 192.168.56.10  
-- Static IP (CLIENT01): 192.168.56.11  
-- DNS Server (Client): 192.168.56.10
+- Static IP (22): 192.168.2.61  
+- Static IP (client11): 192.168.2.69 
+- DNS Server (Client): 192.168.2.61
 
 
 Configuration Steps
 1. Installed **VirtualBox** and created two virtual machines.  
-2. Installed **Windows Server 2022** on DC01 and **Windows 11** on CLIENT01.  
+2. Installed **Windows Server 2022** on 22 and **Windows 11** on client11.  
 3. Promoted DC01 to a **Domain Controller** and created a new forest: `TJORG.COM`.  
 4. Installed **Active Directory Domain Services (AD DS)**.  
-5. Created an **Organizational Unit (OU)** named `LabUsers`.  
-6. Added domain users:
-   - JohnDoe  
-   - JaneSmith  
-7. Configured **DNS** so CLIENT01 uses DC01 as its primary DNS server.  
-8. Joined **CLIENT01** to the **lab.local** domain.  
+5. Created an **Organizational Unit (OU)** named `Sales` and under 'Sales' i created another 2 more OU named 'tech' and 'Home'.  
+6. Added domain users under 'Home':
+   - HomeSales1  
+   - Home Sales2 
+7. Configured **DNS** so CLIENT11 uses 22 as its primary DNS server.  
+8. Joined **CLIENT11** to the **TJORG.COM** domain.  
 9. Verified successful domain login using a domain user account.  
 10. Tested basic network connectivity and authentication.
 
@@ -40,9 +40,3 @@ Configuration Steps
 - Managed users and OUs in **Active Directory Users and Computers (ADUC)**.  
 - Understood **DNS dependencies** within domain environments.  
 - Joined and authenticated a **Windows client** to a domain.
-
----
-
-## 💼 Skills Demonstrated
-`Active Directory (AD DS)` • `DNS & Networking` • `Windows Server Admi
-
