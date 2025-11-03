@@ -21,7 +21,7 @@ Network Configuration:
 Configuration Steps
 1. Installed **VirtualBox** and created two virtual machines.  
 2. Installed **Windows Server 2022** on 22 and **Windows 11** on client11.  
-3. Promoted DC01 to a **Domain Controller** and created a new forest: `TJORG.COM`.  
+3. Promoted '22' to a **Domain Controller** and created a new forest: `TJORG.COM`.  
 4. Installed **Active Directory Domain Services (AD DS)**.  
 5. Created an **Organizational Unit (OU)** named `Sales` and under 'Sales' i created another 2 more OU named 'tech' and 'Home'.  
 6. Added domain users under 'Home':
